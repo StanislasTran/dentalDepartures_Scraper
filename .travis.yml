@@ -1,0 +1,15 @@
+# Specify the language of your project
+language: python
+
+# Define the version(s) of Python to use
+python:
+  - "3.9"
+
+# Install the dependencies
+install:
+  - pip install --upgrade pip  
+  - pip install -r requirements.txt  
+
+# Command to run your script
+script:
+  - python clinic_data_scraper.py 
